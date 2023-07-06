@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+}
+/* Body */
+body {
+    background: linear-gradient(135deg ,rgb(142, 158, 171), rgb(238, 242, 243));
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+/* Body End */
+
+/* Container */
+.container {
+	background-color: #fff;
+	border-radius: 100px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+/* Container End */
+
+/* header */
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background: linear-gradient(rgb(94, 252, 232), rgb(115, 110, 254));
+	padding: 20px 40px;
+	font-size: 20px;
+	font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 4px #000000;
+	-webkit-animation: rainbow 5s infinite;
+	animation: rainbow 5s infinite;
+}
+@-webkit-keyframes rainbow{
+	0%{color: orange;}    
+  10%{color: purple;}    
+    20%{color: red;}
+  30%{color: CadetBlue;}
+    40%{color: yellow;}
+  50%{color: coral;}
+    60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+@keyframes rainbow{
+    0%{color: orange;}    
+  10%{color: purple;}    
+    20%{color: red;}
+  30%{color: CadetBlue;}
+    40%{color: yellow;}
+  50%{color: coral;}
+    60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+.header h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* header end */
+
+/* From */
+.form {
+	padding: 30px 40px;	
+}
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.form-control label {
+	display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 25px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+}
+.form-control input:hover {
+	border-color: black;
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+.form-control.success input {
+	border-color: #2ecc71;
+}
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control span {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+.form-control.error span {
+	visibility: visible;
+}
+/* From End */
+
+/* Button */
+.form .btn button {
+	background: linear-gradient(to left, rgb(161, 196, 253), rgb(194, 233, 251));
+	border: 2px solid #f0f0f0;
+	border-radius: 25px;
+	color: black;
+	display: block;
+	font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+.form .btn button:hover {
+    background: linear-gradient(to right, rgb(161, 196, 253), rgb(194, 233, 251));
+}
+/* Button End */

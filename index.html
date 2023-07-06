@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <link rel="shortcut icon" href="./img/blog.png">
+</head>
+
+<body>
+        <div class="container">
+                <div class="header">
+                        <h2>Create Account</h2>
+                </div>
+
+                <form action="./indedx.php" id="form" class="form" autocomplete="off" onsubmit="validateForm()">
+                        <div class="form-control">
+                                <label for="username">Username</label>
+                                <input type="text" placeholder="florinpop17" id="username" />
+                                <span>Error message</span>
+                        </div>
+
+                        <div class="form-control">
+                                <label for="username">Email</label>
+                                <input type="email" placeholder="example01@gmail.com" id="email" />
+                                <span>Error message</span>
+                        </div>
+
+                        <div class="form-control">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="Password" id="password" />
+                                <span>Error message</span>
+                        </div>
+
+                        <div class="form-control">
+                                <label for="cpassword">Password check</label>
+                                <input type="password" placeholder="Confirm Password" id="cpassword" />
+                                <span>Error message</span>
+                        </div>
+
+                        <div class="form-control">
+                                <label for="Number">Phone No.</label>
+                                <input type="tel" placeholder="123456789" id="tel" name="tel" />
+                                <span>Error message</span>
+                        </div>
+
+                      
+
+
+                        <div class="btn">
+                                <button type="submit">Submit</button>
+                                
+                        </div>
+                </form>
+        </div>
+        
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
